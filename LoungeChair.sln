@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoungeChair", "LoungeChair\LoungeChair.csproj", "{98DDBF8B-FBFD-49E7-B5A8-B11D4A804931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoungeChairAPI", "LoungeChairAPI\LoungeChairAPI.csproj", "{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoungeChairAPI.Test", "LoungeChairAPI.Test\LoungeChairAPI.Test.csproj", "{02ED3E8A-285F-4994-B410-26D0B550656D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{98DDBF8B-FBFD-49E7-B5A8-B11D4A804931}.Release|Any CPU.Build.0 = Release|Any CPU
 		{98DDBF8B-FBFD-49E7-B5A8-B11D4A804931}.Release|x86.ActiveCfg = Release|x86
 		{98DDBF8B-FBFD-49E7-B5A8-B11D4A804931}.Release|x86.Build.0 = Release|x86
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}.Release|x86.Build.0 = Release|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Debug|x86.Build.0 = Debug|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Release|x86.ActiveCfg = Release|Any CPU
+		{02ED3E8A-285F-4994-B410-26D0B550656D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{476F7B3B-FC0C-46FA-BE98-D4A4A92B26D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoungeChairAPI</RootNamespace>
+    <AssemblyName>LoungeChairAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\Auth\ApplicationTokenRequest.cs" />
+    <Compile Include="Accounts\Auth\AuthorizationRequest.cs" />
+    <Compile Include="Accounts\Auth\SessionTokenResponse.cs" />
+    <Compile Include="Accounts\Auth\ApplicationTokenResponse.cs" />
+    <Compile Include="Accounts\User\Mii.cs" />
+    <Compile Include="Accounts\User\OptedInPromotions.cs" />
+    <Compile Include="Accounts\User\Promotion.cs" />
+    <Compile Include="Accounts\User\TimeZone.cs" />
+    <Compile Include="Accounts\User\AccountUser.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Http\HttpHelper.cs" />
+    <Compile Include="Accounts\NintendoAccount.cs" />
+    <Compile Include="Lounge\Credential.cs" />
+    <Compile Include="Lounge\Account\LoungeTokenRequestParameter.cs" />
+    <Compile Include="Lounge\Account\LoungeTokenRequest.cs" />
+    <Compile Include="Lounge\Account\LoungeTokenResponse.cs" />
+    <Compile Include="Lounge\Account\LoungeTokenResponseResult.cs" />
+    <Compile Include="Lounge\Account\LoungeTokenUser.cs" />
+    <Compile Include="Lounge\Event\ActiveEvent.cs" />
+    <Compile Include="Lounge\Event\ActiveEventResponse.cs" />
+    <Compile Include="Lounge\Event\Game.cs" />
+    <Compile Include="Lounge\Event\GameMode.cs" />
+    <Compile Include="Lounge\Event\GameStatus.cs" />
+    <Compile Include="Lounge\Event\EventMember.cs" />
+    <Compile Include="Lounge\Event\ShowEventRequest.cs" />
+    <Compile Include="Lounge\Event\ShowEventRequestParameter.cs" />
+    <Compile Include="Lounge\Event\ShowEventResponse.cs" />
+    <Compile Include="Lounge\Event\ShowEventResponseResult.cs" />
+    <Compile Include="Lounge\OnlineLounge.cs" />
+    <Compile Include="Lounge\Response.cs" />
+    <Compile Include="Lounge\User\LoungeUser.cs" />
+    <Compile Include="Lounge\User\UserListResponse.cs" />
+    <Compile Include="Lounge\GameWebService\GetServiceTokenRequest.cs" />
+    <Compile Include="Lounge\GameWebService\GetServiceTokenRequestParameter.cs" />
+    <Compile Include="Lounge\GameWebService\GetServiceTokenResponse.cs" />
+    <Compile Include="Lounge\GameWebService\ServiceListResponse.cs" />
+    <Compile Include="Lounge\GameWebService\WebService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
