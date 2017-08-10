@@ -69,10 +69,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\CefSharp.WinForms.57.0.0\CefSharp\x86\CefSharp.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="LoungeChairAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\LoungeChairAPI\LoungeChairAPI\bin\Release\LoungeChairAPI.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -145,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoungeChairAPI\LoungeChairAPI.csproj">
+      <Project>{476f7b3b-fc0c-46fa-be98-d4a4a92b26d9}</Project>
+      <Name>LoungeChairAPI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\cef.redist.x64.3.2987.1601\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2987.1601\build\cef.redist.x64.targets')" />
