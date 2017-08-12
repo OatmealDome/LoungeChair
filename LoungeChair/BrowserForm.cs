@@ -1,4 +1,5 @@
-﻿using LoungeChairAPI.Lounge;
+﻿using System;
+using LoungeChairAPI.Lounge;
 using LoungeChairAPI.Lounge.GameWebService;
 using CefSharp;
 using CefSharp.WinForms;
