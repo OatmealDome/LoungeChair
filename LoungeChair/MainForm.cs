@@ -36,6 +36,13 @@ namespace LoungeChair
             // Initialize Cef
             CefSettings settings = new CefSettings();
             Cef.Initialize(settings);
+
+            // Only fully supported in Windows 7 or higher
+            if (Environment.OSVersion.Platform == PlatformID.Win32NT && (Environment.OSVersion.Version.Major == 6 && Environment.OSVersion.Version.Minor >= 1 || Environment.OSVersion.Version.Major > 6))
+            {
+                // Enable High-DPI support in Cef
+                Cef.EnableHighDPISupport();
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
